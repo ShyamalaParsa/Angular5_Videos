@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Employee Detail data:</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Emp.Id</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Company Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employeelistData; index as i">
+        <td>{{ i }}</td>
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.name }}</td>
+        <td>{{ emp.role }}</td>
+        <td>{{ emp.ComapanyName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

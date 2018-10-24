@@ -1,0 +1,8 @@
+
+<h4>TemplateReference Variable:</h4>
+<input #myInput type="text">
+<button (click)="logMessage(myInput.value)">Log</button>
+<br><br>
+<h4>Two-way data-binding:</h4>
+<input [(ngModel)]="name" type="text">
+{{name}}

@@ -1,0 +1,29 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Account Number</th>
+        <th>Branch Name</th>
+        <th>Expenses</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let month of expensetotaldata; index as i">
+        <td>{{ i }}</td>
+        <td>{{ month.acuntNo }}</td>
+        <td>{{ month.branchName }}</td>
+        <td>{{ month.mrchntName }}</td>
+        <td>{{ month.amount }}</td>
+      </tr>
+      <!-- <tr *ngFor="let month of expensetotaldata1; index as i">
+        <td>{{ i }}</td>
+        <td>{{ month.acuntNo }}</td>
+        <td>{{ month.branchName }}</td>
+        <td>{{ month.mrchntName }}</td>
+        <td>{{ month.amount }}</td>
+      </tr> -->
+    </tbody>
+  </table>
+</div>

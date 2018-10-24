@@ -1,0 +1,30 @@
+<!-- <h2 *ngIf="displayName; else elseBlock">Shyamala</h2>
+<ng-template #elseBlock>
+  <h2>Name is hidden</h2>
+</ng-template> -->
+
+<h5>ngIf Directive data</h5>
+
+<div *ngIf="displayName;then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+  <h2> true ThenBlock is displayed</h2>
+</ng-template>
+<ng-template #elseBlock>
+  <h2> false ElseBlock is displayed</h2>
+</ng-template>
+
+
+<h5>ngSwith Directive data</h5>
+
+<div [ngSwitch]="color">
+  <h6 *ngSwitchCase="'blue'">Your picked blue color</h6>
+  <h5 *ngSwitchCase="'red'">Your picked red color</h5>
+  <h4 *ngSwitchCase="'green'">Your picked green color</h4>
+  <h3 *ngSwitchDefault>Pick me again</h3>
+</div>
+
+<h5>ngFor Directive data</h5>
+
+<div *ngFor="let color of colorsData; index as i">
+  {{i}} {{color}}
+</div>
